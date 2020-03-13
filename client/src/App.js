@@ -65,8 +65,7 @@ class App extends React.Component {
       <div className="App">
       <main>
       <Header/>
-      <Switch>
-
+      
         <Route exact path="/">
         <UserCard user={this.state.user} />
         </Route>
@@ -75,7 +74,6 @@ class App extends React.Component {
         <SearchBar />
         </Route>
         
-      </Switch>
       </main>
         
       </div>
