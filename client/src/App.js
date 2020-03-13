@@ -4,11 +4,7 @@ import Header from "./Components/Header";
 import axios from "axios"
 import './App.css';
 import SearchBar from './Components/SearchBar';
-import {
-  Link,
-  Switch,
-  Route
-} from "react-router-dom";
+import {Route} from "react-router-dom";
 
 
 
@@ -73,7 +69,7 @@ class App extends React.Component {
         <Route exact path="/SearchForm">
         <SearchBar />
         </Route>
-        
+
       </main>
         
       </div>
