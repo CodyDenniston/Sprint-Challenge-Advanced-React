@@ -1,7 +1,15 @@
 import React from 'react';
 import UserCard from "./Components/UserCard";
+import Header from "./Components/Header";
 import axios from "axios"
 import './App.css';
+import SearchBar from './Components/SearchBar';
+import {
+  Link,
+  Switch,
+  Route
+} from "react-router-dom";
+
 
 
 
@@ -55,7 +63,21 @@ class App extends React.Component {
     console.log('rendering App component', this.state.user.length);
     return (
       <div className="App">
+      <main>
+      <Header/>
+      <Switch>
+
+        <Route exact path="/">
         <UserCard user={this.state.user} />
+        </Route>
+
+        <Route exact path="/SearchForm">
+        <SearchBar />
+        </Route>
+        
+      </Switch>
+      </main>
+        
       </div>
     );
   }
