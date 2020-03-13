@@ -53,7 +53,7 @@ const SearchBar = ( props ) => {
      
     <div className="user-list">
       
-          return <UserCard user={results} />
+           <UserCard user={results} />
           
       
       </div>
